@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Urna eletrônica</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Urna Eletrônica - 2021</h1>
+    <form action="#" method="POST" name="f_rascunho">
+        <label class="lpres">Presidente da República: </label>
+        <input type="text" name="f_vpres" id="vpres" maxlength="2" size="6" placeholder="XX" autofocus required>
+        <button type="button" name="f_btn_p" onclick="verifyp()">Votar</button>
+        <Fieldset class="esp_t" id="fieldpres">
+            <legend>Nome</legend>
+            <p id="nomepres"></p>
+        </Fieldset>
+        <br>
+        <label class="lgov">Governardor: </label>
+        <input type="text" name="f_vgov" id="vgov" maxlength="6" size="6" placeholder="XXXXXX"  required>
+        <button type="button" name="f_btn_g" onclick="verifyg()">Votar</button>
+        <fieldset class="fieldgov" id="fieldgov">
+            <legend>Nome</legend>
+            <p id="nomegov"></p>
+        </fieldset>
+        <br>
+        <button class="btn_r btn_m" type="reset" name="f_btn_reset">CORRIGE</button>
+        <button class="btn_c" type="submit" name="f_btn_sbmt" onclick="confirma()">CONFIRMA</button>
+        
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
